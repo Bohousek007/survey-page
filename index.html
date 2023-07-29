@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="container">
+        <header class="header">
+            <h1 id="title" class="text-center">Chcete začít podnikat?</h1>
+
+    <form id="survey-form">
+        <div class="form-group">
+            <label id="name-label">Jméno<input class="form-control" placeholder="Zadej své jméno" id="name" type="name" required=""></input></label>
+            <label id="email-label">Email<input class="form-control" placeholder="Zadej svůj Email" id="email" type="email" required=""></input></label>
+            <label id="number-label">Věk<input class="form-control" placeholder="Věk" id="number" type="number" min="16" max="60"></input></label>
+        </div>
+
+        <div class="form-group">
+            <select id="dropdown" class="form-control" required="">
+            <option value="0">Jaká je tvá role?</option>
+            <option value="1">FRONT-END DEVELOPER</option>
+            <option value="2">BACK-END DEVELOPER</option>
+            <option value="3">FULLSTACK DEVELOPER</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <p>Bavilo by tě pracovat na našem projektu?</p>
+            <label for="zajem-pracovat"><input class="input-radio"id="definitely" type="radio" name="user-choose" value="definitely">Určitě.</input>
+            <label for="zajem-pracovat"><input class="input-radio"id="maybe" type="radio" name="user-choose" value="not-sure">Ne.</input>
+            <label for="zajem-pracovat"><input class="input-radio"id="zajem-pracovat" type="radio" name="user-choose" value="know-more">Chci vědět více.</input>
+        </div>
+
+        <div class="form-group">
+            <p>V čem bys chtěl být lepší?</p>
+            <label><input class="input-checkbox" name="prefer" value="front-end" type="checkbox">Front-End</input></label>
+            <label><input class="input-checkbox" name="prefer" value="back-end" type="checkbox">Back-End</input></label>
+            <label><input class="input-checkbox" name="prefer" value="challenges" type="checkbox">Challenges</input></label>
+            <label><input class="input-checkbox" name="prefer" value="python" type="checkbox">Python</input></label>
+            <label><input class="input-checkbox" name="prefer" value="videos" type="checkbox">Videos</input></label>
+        </div>
+        
+        <div class="form-group">
+            <label for="bio">Komentář:
+            <textarea class="input-textarea" id="bio" name="bio" rows="3" cols="30" placeholder="Zajímá mě..."></textarea>
+            </label>
+            <button class="submit-button" id="submit">POSLAT FORMULÁŘ</button>
+        </div>
+        <p id="description" class="description text-center">Děkujeme za Váš čas, určitě se vám ozveme.</p>
+    </form>
+  </body>
+</html>
